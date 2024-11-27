@@ -1,5 +1,6 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Hero from "./components/Hero"
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <div className="min-h-screen">
       <Header />
       <main>
-        
+        <Hero />
       </main>
       <Footer />
     </div>
