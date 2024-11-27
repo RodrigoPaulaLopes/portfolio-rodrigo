@@ -10,36 +10,36 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Projeto 1',
-      description: 'Uma aplicação web moderna construída com React e Node.js',
+      title: 'EduTrack Project',
+      description: 'Este é um sistema de gerenciamento escolar completo, desenvolvido para facilitar a administração de alunos, professores e responsáveis.',
       image: 'https://via.placeholder.com/500x300',
-      tech: ['React', 'Node.js', 'MongoDB'],
+      tech: ['Node.js', 'Nest.js', 'Postgresql', 'React', 'Jest'],
       liveUrl: '#',
-      codeUrl: '#',
+      codeUrl: 'https://github.com/RodrigoPaulaLopes/edutrack',
     },
     {
-      title: 'Projeto 2',
-      description: 'Sistema de gerenciamento desenvolvido com TypeScript',
+      title: 'SaleHub Project',
+      description: 'Sistema feito para gerenciamento de compra e venda completo.',
       image: 'https://via.placeholder.com/500x300',
-      tech: ['TypeScript', 'Express', 'PostgreSQL'],
+      tech: ['TypeScript', 'Express', 'PostgreSQL', 'React', 'Jest'],
       liveUrl: '#',
-      codeUrl: '#',
+      codeUrl: 'https://github.com/RodrigoPaulaLopes/api-vendas',
     },
     {
-      title: 'Projeto 3',
-      description: 'Aplicação mobile multiplataforma com React Native',
+      title: 'People Cysource',
+      description: 'Sistema de gerenciamento de usuarios.',
       image: 'https://via.placeholder.com/500x300',
-      tech: ['React Native', 'Firebase', 'Redux'],
+      tech: ['React', 'Typescript', 'Python', 'Flask'],
       liveUrl: '#',
       codeUrl: '#',
     },
   ];
 
   return (
-    <section id="projects" className="section-container">
+    <section id="projects" className="section-container bg-background">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Meus Projetos</h2>
-        <p className="text-gray-600">Alguns dos trabalhos que desenvolvi</p>
+        <h2 className="text-3xl font-bold mb-4 text-text-primary">Meus Projetos</h2>
+        <p className="text-text-secondary">Alguns dos trabalhos que desenvolvi</p>
       </div>
 
       <motion.div
@@ -55,7 +55,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            className="bg-surface rounded-lg overflow-hidden shadow-lg hover:shadow-xl hover:shadow-primary/20 transition-all"
           >
             <img
               src={project.image}
@@ -63,13 +63,13 @@ const Projects = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
+              <h3 className="text-xl font-bold mb-2 text-text-primary">{project.title}</h3>
+              <p className="text-text-secondary mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                    className="bg-background text-text-secondary px-3 py-1 rounded-full text-sm"
                   >
                     {tech}
                   </span>
@@ -78,20 +78,34 @@ const Projects = () => {
               <div className="flex space-x-4">
                 <a
                   href={project.liveUrl}
-                  className="flex items-center text-primary hover:text-secondary"
+                  className="flex items-center text-primary hover:text-accent transition-colors"
                 >
                   <HiExternalLink className="mr-1" /> Demo
                 </a>
                 <a
                   href={project.codeUrl}
-                  className="flex items-center text-primary hover:text-secondary"
+                  className="flex items-center text-primary hover:text-accent transition-colors"
                 >
-                  <HiCode className="mr-1" /> Código
+                  <HiCode className="mr-1" /> Frontend
+                </a>
+                <a
+                  href={project.codeUrl}
+                  className="flex items-center text-primary hover:text-accent transition-colors"
+                >
+                  <HiCode className="mr-1" /> Backend
                 </a>
               </div>
             </div>
           </motion.div>
         ))}
+
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
+        className="text-center mt-12">
+        <a href="https://github.com/RodrigoPaulaLopes?tab=repositories" className='text-center hover:text-accent'>Veja outros projetos que desenvolvi acessando meu GitHub.</a>
       </motion.div>
     </section>
   );

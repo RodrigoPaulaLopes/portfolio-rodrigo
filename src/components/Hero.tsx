@@ -12,16 +12,24 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="text-5xl md:text-6xl font-bold mb-6"
         >
-          Olá, eu sou <span className="text-primary">Desenvolvedor</span>
+          Olá, eu sou <span className="text-primary">Rodrigo Lopes</span>
         </motion.h1>
         
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xl text-gray-600 mb-8"
+          className="text-xl text-gray-200"
         >
-          Transformando ideias em experiências digitais incríveis
+          Especialista em desenvolvimento de aplicações modernas utilizando tecnologias como React, Nest.js, Node.js e TypeScript.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-xl text-gray-200 mb-8"
+        >
+          Apaixonado por transformar desafios em soluções escaláveis, com experiência em frontend e backend. 
         </motion.p>
 
         <motion.div

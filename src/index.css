@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2563eb;
-  --secondary: #1e40af;
+  --primary: #D4B996; /* Warm beige */
+  --secondary: #A67C52; /* Darker beige/brown */
+  --background: #2C2C2C; /* Dark gray */
+  --surface: #383838; /* Slightly lighter gray */
+  --accent: #E6CCAF; /* Light beige for accents */
+  --text-primary: #F8FAFC; /* Almost white */
+  --text-secondary: #CBD5E1; /* Light gray */
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  @apply bg-gray-50 text-gray-900;
+  @apply bg-background text-text-primary;
 }
 
 .section-container {
