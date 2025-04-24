@@ -21,7 +21,7 @@ const Header = () => {
             className="text-2xl font-bold"
             whileHover={{ scale: 1.05 }}
           >
-            CodeBy<span className="text-accent">Rodrigo</span>
+            {"<"}CodeBy<span className="text-accent">Rodrigo</span>{" />"}
           </motion.a>
 
           <div className="hidden md:flex space-x-8">

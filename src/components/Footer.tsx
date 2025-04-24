@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold">CodeBy<span className="text-accent">Rodrigo</span></h3>
+          <h3 className="text-2xl font-bold">{"<"}CodeBy<span className="text-accent">Rodrigo</span>{" />"}</h3>
             <p className="text-gray-700 mt-2">Transformando ideias em realidade</p>
           </div>
           
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-8 pt-8 text-center text-gray-700">
-          <p>&copy; {new Date().getFullYear()} CodeByRodrigo Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} {"<"}CodeByRodrigo{" />"} Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

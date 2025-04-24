@@ -30,7 +30,7 @@ const Skills = () => {
     { name: 'NestJS', icon: SiNestjs, color: 'text-red-500' },
     { name: 'Express', icon: SiExpress, color: 'text-black' },
     { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-500' },
-    { name: 'Jest', icon: SiJest, color: 'text-orange-800' },
+    // { name: 'Jest', icon: SiJest, color: 'text-orange-800' },
     { name: 'Python', icon: SiPython, color: 'text-blue-400' },
     { name: 'Flask', icon: SiFlask, color: 'text-green-500' },
     { name: 'Git', icon: SiGit, color: 'text-orange-500' },

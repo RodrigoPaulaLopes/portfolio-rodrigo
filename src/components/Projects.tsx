@@ -56,7 +56,7 @@ const Projects = () => {
     },
     {
       title: 'Chatter - chat em tempo real',
-      description: 'Aplicação de chat em tempo real ',
+      description: 'Plataforma de chat em tempo real que permite conversas instantâneas com uma interface simples e funcional.',
       image: '/assets/chatter.jpeg',
       tech: ['React', 'Typescript', 'Graphql', 'Nestjs', 'Material UI', 'websockets'],
       liveUrl: '#',
