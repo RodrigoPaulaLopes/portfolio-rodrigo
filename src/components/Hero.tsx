@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { HiArrowDown } from 'react-icons/hi';
 import BackgroundShapes from './BackgroundShapes';
