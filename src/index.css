@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2563eb;
-  --secondary: #1e40af;
+  --primary: #1E3A8A; /* Azul escuro - Indigo 900 */
+  --secondary: #3B82F6; /* Azul padrão - Blue 500 */
+  --background: #F1F5F9; /* Fundo claro - Slate 100 */
+  --surface: #FFFFFF; /* Branco para superfícies */
+  --accent: #93C5FD; /* Azul claro para detalhes - Blue 300 */
+  --text-primary: #1E293B; /* Texto escuro - Slate 800 */
+  --text-secondary: #475569; /* Texto secundário - Slate 600 */
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  @apply bg-gray-50 text-gray-900;
+  @apply bg-background text-text-primary;
 }
 
 .section-container {
