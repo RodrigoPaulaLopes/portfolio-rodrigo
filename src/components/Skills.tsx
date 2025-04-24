@@ -15,7 +15,8 @@ import {
   SiMysql,
   SiPostgresql,
   SiLinux,
-  SiMongodb
+  SiMongodb,
+  SiGraphql
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -29,6 +30,7 @@ const Skills = () => {
     { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-500' },
     { name: 'React', icon: SiReact, color: 'text-blue-400' },
     { name: 'React Native', icon: SiReact, color: 'text-blue-400' },
+    { name: 'Graphql', icon: SiGraphql, color: 'text-pink-400' },
     { name: 'NestJS', icon: SiNestjs, color: 'text-red-500' },
     { name: 'Express', icon: SiExpress, color: 'text-black' },
     { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-500' },
