@@ -15,7 +15,8 @@ const Projects = () => {
       image: "/assets/eventix.jpeg",
       tech: ['Node.js', 'Nest.js', 'Postgresql', 'React', 'Tailwind CSS', 'Docker'],
       liveUrl: '#',
-      codeUrl: 'https://github.com/RodrigoPaulaLopes/eventify',
+      frontend: 'https://github.com/RodrigoPaulaLopes/eventify',
+      backend: 'https://github.com/RodrigoPaulaLopes/eventify',
     },
     {
       title: 'Inventory Pro',
@@ -23,15 +24,17 @@ const Projects = () => {
       image: '/assets/inventory_pro.jpeg',
       tech: ['TypeScript', 'Express', 'PostgreSQL', 'React', 'Tailwind CSS', 'Jest'],
       liveUrl: '#',
-      codeUrl: 'https://github.com/RodrigoPaulaLopes/api-vendas',
+      frontend: 'https://github.com/RodrigoPaulaLopes/api-vendas',
+      backend: 'https://github.com/RodrigoPaulaLopes/api-vendas',
     },
     {
       title: 'Landing Page - Loja Virtual',
       description: 'Landing page responsiva para loja virtual com foco em apresentação de produtos e navegação intuitiva.',
       image: '/assets/avanti_virtual.jpeg',
-      tech: ['HTML', 'CSS', 'Tailwind CSS', 'Daisyui', 'Javascript', 'Swiper.js'],
+      tech: ['HTML', 'CSS', 'Tailwind CSS', 'Daisyui', 'Javascript', 'Swiper.js', 'Fontawesome'],
       liveUrl: 'https://virtualstore-avanti.netlify.app/',
-      codeUrl: '#',
+      frontend: 'https://github.com/RodrigoPaulaLopes/avanti---project-1',
+      backend: 'https://github.com/RodrigoPaulaLopes/avanti---project-1',
     },
     {
       title: 'GitPeek - buscar perfis no github',
@@ -39,15 +42,26 @@ const Projects = () => {
       image: '/assets/github_find.jpeg',
       tech: ['React', 'Typescript', 'Tailwind CSS', 'Daisyui', 'Axios'],
       liveUrl: 'https://gitpeek-avanti.netlify.app/',
-      codeUrl: '#',
+      frontend: 'https://github.com/RodrigoPaulaLopes/gitpeek',
+      backend: 'https://github.com/RodrigoPaulaLopes/gitpeek',
     },
     {
       title: 'People Cysource',
       description: 'Sistema de gerenciamento de usuarios.',
-      image: 'https://via.placeholder.com/500x300',
-      tech: ['React', 'Typescript', 'Python', 'Flask'],
+      image: '/assets/cysource.jpeg',
+      tech: ['React', 'Typescript', 'Bootstrap', 'Python', 'Flask'],
       liveUrl: '#',
-      codeUrl: '#',
+      frontend: 'https://github.com/RodrigoPaulaLopes/people_cysource#',
+      backend: 'https://github.com/RodrigoPaulaLopes/projeto_cysource_python',
+    },
+    {
+      title: 'Chatter - chat em tempo real',
+      description: 'Aplicação de chat em tempo real ',
+      image: '/assets/chatter.jpeg',
+      tech: ['React', 'Typescript', 'Graphql', 'Nestjs', 'Material UI', 'websockets'],
+      liveUrl: '#',
+      frontend: '#',
+      backend: '#',
     },
   ];
 
@@ -99,13 +113,13 @@ const Projects = () => {
                   <HiExternalLink className="mr-1" /> Demo
                 </a>
                 <a
-                  href={project.codeUrl}
+                  href={project.frontend}
                   className="flex items-center text-primary hover:text-accent transition-colors"
                 >
                   <HiCode className="mr-1" /> Frontend
                 </a>
                 <a
-                  href={project.codeUrl}
+                  href={project.backend}
                   className="flex items-center text-primary hover:text-accent transition-colors"
                 >
                   <HiCode className="mr-1" /> Backend
